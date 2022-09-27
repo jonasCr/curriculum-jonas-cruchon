@@ -1,12 +1,13 @@
 import './App.css';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div className='block md:flex'>
-      <div className="bg-orange-500 flex-none">
-        <h1>Me</h1>
+    <div className='block md:flex h-screen'>
+      <div className="bg-accent-900 text-textAccent flex-none">
+        <Navbar></Navbar>
       </div>
-      <div className='bg-orange-50 flex-auto'>
+      <div className='bg-accent-50 flex-auto'>
         <h1>Mi career</h1>
       </div>
     </div>
