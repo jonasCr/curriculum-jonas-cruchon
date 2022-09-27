@@ -7,7 +7,7 @@ import Skills from './main/Skills'
 
 const Main = () => {
   return (
-    <main className='h-screen overflow-scroll overflow-x-hidden'>
+    <main className='md:h-screen md:overflow-scroll'>
       <section className='h-screen flex items-center justify-center border-b-4 border-accent-900'>
         <About />
       </section>

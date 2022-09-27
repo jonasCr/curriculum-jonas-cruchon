@@ -5,7 +5,7 @@ import Navbar from './components/Navbar';
 function App() {
   return (
     <div className='block md:flex h-screen'>
-      <div className="bg-accent-900 text-textAccent flex-none h-full">
+      <div className="bg-accent-900 text-textAccent flex-none md:h-full">
         <Navbar></Navbar>
       </div>
       <div className='flex-auto bg-accent-50'>
