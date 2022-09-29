@@ -9,7 +9,7 @@ module.exports = {
     colors: {
       accent: colors.indigo,
       textAccent: colors.white,
-      primary: colors.black,
+      primary: colors.slate,
     },
     extend: {},
   },
