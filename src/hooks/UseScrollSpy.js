@@ -4,7 +4,7 @@ import throttle from 'lodash/fp/throttle';
 export default ({
   activeSectionDefault = 0,
   offsetPx = 0,
-  scrollingElement = window,
+  scrollingElement = null,
   sectionElementRefs = [],
   throttleMs = 100,
 
@@ -30,14 +30,18 @@ export default ({
   });
 
   useEffect(() => {
-    scrollingElement.addEventListener('scroll', handle);
+    let scrollable = scrollingElement == null
+      ? window
+      : scrollingElement.current
+
+      scrollable.addEventListener('scroll', handle);
 
     // Run initially
     handle();
 
     return () => {
-      scrollingElement.removeEventListener('scroll', handle);
+      scrollable.removeEventListener('scroll', handle);
     };
-  }, [sectionElementRefs, offsetPx]);
+  }, [sectionElementRefs, offsetPx, scrollingElement]);
   return activeSection;
 };
