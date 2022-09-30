@@ -2,3 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .section-title{
+    @apply mb-5 md:mb-10 md:text-4xl text-3xl font-extrabold uppercase
+  }
+}

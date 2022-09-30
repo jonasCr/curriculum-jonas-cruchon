@@ -4,7 +4,6 @@ import Certification from './main/Certification'
 import Education from './main/Education'
 import Experience from './main/Experience'
 import Skills from './main/Skills'
-import useScrollSpy from '../hooks/UseScrollSpy';
 
 const Main = ({sectionsRef}) => {
   
