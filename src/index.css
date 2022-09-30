@@ -6,4 +6,8 @@
   .section-title{
     @apply mb-5 md:mb-10 md:text-4xl text-3xl font-extrabold uppercase
   }
+
+  .green-pills{
+    @apply text-center p-2 rounded-2xl font-medium text-sm block bg-green-800 text-textAccent
+  }
 }

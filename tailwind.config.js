@@ -10,6 +10,9 @@ module.exports = {
       accent: colors.indigo,
       textAccent: colors.white,
       primary: colors.slate,
+      blue: colors.blue,
+      orange: colors.orange,
+      green: colors.green
     },
     extend: {},
   },
